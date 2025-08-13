@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 html {
@@ -168,7 +169,8 @@ header {
 
 .about {
     display: flex;
-    max-width: 110px;
+    max-width: 100%;
+    height: auto;
     margin: auto;
     padding: 4rem 2rem;
     flex-wrap: wrap;
@@ -176,10 +178,12 @@ header {
     gap: 3rem;
 }
 
-.about-img img {
-    width: 100%;
-    max-width: 280px;
+.about-img {
+    width: auto;
+    display: block;
+    max-width: 100%;
     height: auto;
+    gap: 20px;
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
